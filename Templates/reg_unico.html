@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css"> 
+
+  <header>
+    <div class="topbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="Logo">
+        </a>
+      </div>
+     
+    </div>
+  
+</head>
+
+
+
+  <div class="container">
+    <article>
+      <form id="regusers">
+        <h3>REGISTRO DE USUARIO</h3>
+        <br>
+        <label for="fname"> Identificacion</label><br>
+        <input type="text" id="documento" name="Documento"><br>
+       
+        <br>
+        
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary" id="showDocumentoOptionsBtn">Tipo de documento</button>
+        </div>
+        
+        <div id="documentoOptions" class="documento-options" style="display: none;">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="cedula" name="tipoDocumento" value="Cedula">
+            <label class="form-check-label" for="cedula">Cédula</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="pasaporte" name="tipoDocumento" value="Pasaporte">
+            <label class="form-check-label" for="pasaporte">Pasaporte</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="cedula_extranjera" name="tipoDocumento" value="Cedula Extranjera">
+            <label class="form-check-label" for="cedula_extranjera">Cédula Extranjera</label>
+          </div>
+        </div>
+        
+        <script>
+          document.getElementById("showDocumentoOptionsBtn").addEventListener("click", function() {
+            var documentoOptions = document.getElementById("documentoOptions");
+            if (documentoOptions.style.display === "none") {
+              documentoOptions.style.display = "block";
+            } else {
+              documentoOptions.style.display = "none";
+            }
+          });
+        </script>
+        
+
+        <br>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="nombre" name="Nombre"><br>
+
+        <label for="lname">Número celular:</label><br>
+        <input type="tel" name="Celular" id="celular"><br>
+        
+        <br>
+
+        <label for="segundo ">Targeta</label><br>
+        <input type="text" id="targeta" name="Targeta"><br>
+        <br>
+
+        <button type="button" class="btn btn-primary" id="showCardTypeBtn">Tipo de tarjeta</button>
+        <div id="cardTypeOptions" style="display: none;">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="debito" name="tipoTarjeta" value="Debito">
+            <label class="form-check-label" for="debito">Débito</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="credito" name="tipoTarjeta" value="Credito">
+            <label class="form-check-label" for="credito">Crédito</label>
+          </div>
+        </div>
+        
+        <script>
+          document.getElementById('showCardTypeBtn').addEventListener('click', function() {
+            var cardTypeOptions = document.getElementById('cardTypeOptions');
+            if (cardTypeOptions.style.display === 'none') {
+              cardTypeOptions.style.display = 'block';
+            } else {
+              cardTypeOptions.style.display = 'none';
+            }
+          });
+        </script>
+       
+
+     
+        
+
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Seleccione su imagen de perfil</label>
+          <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" accept=".jpg, .jpeg, .png, image/*;capture=camera." name="userPhoto" single />
+          <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+          <input type="text" id="response" class="form-control" placeholder="Base-64 value" />
+          <i class="glyphicon glyphicon-globe form-control-feedback"></i>
+        </div>
+        
+        <br>
+        <input type="submit" value="Guardar" id="btnsave"><br>
+
+        <br>
+
+        <a href="actualizar.html" class="btn btn-secondary ">Atualizar datos </a>
+
+
+        <br>
+
+
+
+
+      </form>
+    </article>
+    <br>
+    <br>
+    <article>
+      <br>
+
+      
+      <label for="fname"> visualisacion de perfil</label><br>
+
+      <br>
+      <input type="number" name="" id="edtid" placeholder="Ingrese cedula">
+      <input type="button" value="Buscar" id="btnsearch">
+    </article>
+  </div>
+  <br>
+  <br>
+  <div class="container" id="container1">
+
+  </div>
+
+  <script type="module" src="../Controllers/reg_unico.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="../Controllers/base64.js"></script>
+  <script>
+    document.getElementById("showOptionsBtn").addEventListener("click", function() {
+      var optionsDiv = document.getElementById("tarjetaOptions");
+      if (optionsDiv.style.display === "none") {
+        optionsDiv.style.display = "block";
+      } else {
+        optionsDiv.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
