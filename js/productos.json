@@ -1,0 +1,73 @@
+[
+    {
+        "id": "llanta-01",
+        "titulo": "Llanta 01",
+        "imagen": "./img/llantas/01.jpg",
+        "categoria": {
+            "nombre": "Llantas",
+            "id": "llantas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "llanta-02",
+        "titulo": "Llanta 02",
+        "imagen": "./img/llantas/02.jpg",
+        "categoria": {
+            "nombre": "Llantas",
+            "id": "llantas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "llanta-03",
+        "titulo": "Llanta 03",
+        "imagen": "./img/llantas/03.jpg",
+        "categoria": {
+            "nombre": "Llantas",
+            "id": "llantas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "rin-01",
+        "titulo": "Rin 01",
+        "imagen": "./img/rines/01.jpg",
+        "categoria": {
+            "nombre": "Rines",
+            "id": "rines"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "rin-02",
+        "titulo": "Rin 02",
+        "imagen": "./img/rines/02.jpg",
+        "categoria": {
+            "nombre": "Rines",
+            "id": "rines"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "sillin-01",
+        "titulo": "Sillin 01",
+        "imagen": "./img/sillines/01.jpg",
+        "categoria": {
+            "nombre": "Sillines",
+            "id": "sillines"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "sillin-02",
+        "titulo": "Sillin 02",
+        "imagen": "./img/sillines/02.jpg",
+        "categoria": {
+            "nombre": "Sillines",
+            "id": "sillines"
+        },
+        "precio": 1000
+    }
+
+]
