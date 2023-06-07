@@ -1,0 +1,115 @@
+/* Estilo de los bordes donde se agregan los datos */
+input[type="text"],
+input[type="tel"],
+input[type="file"] {
+  border: 2px solid #555555;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* Estilo de los botones */
+.btn-primary {
+  background-color: #a5a8ab;
+  border-color: #609ee0;
+}
+
+.btn-primary:hover {
+  background-color: #929393bc;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.25rem rgba(107, 111, 114, 0.5);
+}
+#btnsearch {
+  background-color: #9f9f9f;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btnsave {
+  background-color: #b1b1b1;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btnsave {
+  background-color: #979797;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo de la imagen de fondo para la página */
+body {
+  background-image: url("");
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d5ea32;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  .topbar {
+    background-color: #333333; /* Cambia el color del topbar aquí */
+    padding: 10px;
+  }
+
+  .topbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .topbar-title {
+    color: white;
+    margin-top: 10px;
+  }
+
+
+.topbar-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+
+
+
+.topbar-button:hover {
+  opacity: 0.8;
+}
