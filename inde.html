@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .card-body {
+      padding: 50px;
+    }
+
+    .form-control {
+      border-color: #dddddd;
+      border-radius: 8px;
+      box-shadow: none;
+    }
+
+    .btn-primary {
+      background-color: #ff4081;
+      border-color: #ff4081;
+      border-radius: 8px;
+      padding: 14px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff3366;
+      border-color: #ff3366;
+    }
+
+    .btn-secondary {
+      background-color: #333333;
+      border-color: #333333;
+      border-radius: 8px;
+      padding: 14px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #222222;
+      border-color: #222222;
+    }
+
+    .topbar {
+  background-color: #333333; /* Cambia el color del topbar aquí */
+  padding: 10px;
+}
+
+.topbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .topbar-title {
+    color: white;
+    margin-top: 10px;
+  }
+
+
+.logo {
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.logo img {
+  height: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  border-radius: 30%; /* Aplica el borde circular */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+
+}
+
+.logo:hover {
+  opacity: 0.7; /* Ajusta la opacidad del logo en el hover según prefieras */
+}
+
+  </style>
+</head>
+
+<div class="topbar">
+  <a href="#" class="logo">
+    <img src="../img/logo.png" alt="Logo">
+  </a>
+  <h1 class="topbar-title">AUTO TROPICO</h1>
+</div>
+
+
+<body>
+  <div class="container">
+    <section class="main">
+      <article>
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="emailuser">Usuario:</label>
+              <input type="email" class="form-control" id="emailuser" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="pwsuser">Contraseña:</label>
+              <input type="password" class="form-control" id="pwsuser" placeholder="Ingrese clave">
+            </div>
+            <div class="d-grid gap-2">
+              <input type="button" id="loginbtn" value="Iniciar Sesión" class="btn btn-primary">
+              <a href="Templates/inicio.html" class="btn btn-secondary ">Registrarse</a>
+              <a href="vista.html" class="btn btn-secondary ">Atras</a>
+              
+              
+           
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script type="module" src="Controllers/inde.js"></script>
+
+</body>
+</html>
